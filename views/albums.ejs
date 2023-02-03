@@ -1,0 +1,9 @@
+<% albumArr.forEach(album => { %>
+ <h1><%- album.name %> </h1>
+ <% if (album.images.length > 0 ) { %>
+    <img src="<%- album.images[0].url%> " alt=""/>
+ <% } else { %> 
+ <img src="https://wellesleysocietyofartists.org/wp-content/uploads/2015/11/image-not-found.jpg" alt=""/>
+<% } %>
+<button><a href="/tracks/<%- album.id%> ">View tracks</a></button>
+<% }) %> 

@@ -1,0 +1,13 @@
+<% dataBody.forEach(item => { %>
+ <h1><%= item.name %>  </h1>
+ <% if (item.images.length > 0 ) { %>
+    <img src="<%- item.images[0].url%> " alt=""/>
+ <% } else { %> 
+ <img src="https://wellesleysocietyofartists.org/wp-content/uploads/2015/11/image-not-found.jpg" alt=""/>
+<% } %>
+<button><a href="/albums/<%- item.id%> ">View Albums</a></button>
+<% }) %> 
+
+
+
+ 
